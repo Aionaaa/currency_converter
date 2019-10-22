@@ -9,10 +9,21 @@
   <body>
     <div id="app">
       <form v-on:submit.prevent="saveAmount">
-        <h3>Choose an amount of money</h3>
+        <h3>Choose an amount of money (eur-gbp)</h3>
         <input type="number" v-model="currency.rates"/>
         <input type="submit" value="Submit">
       </form>
+      <div class="euroToPound" v-on:change="poundToEuro($event)">
+
+      </div>
+      <form v-on:submit.prevent="saveAmount">
+        <h3>Choose an amount of money (gbp-eur)</h3>
+        <input type="number" v-model="currency.rates"/>
+        <input type="submit" value="Submit">
+      </form>
+      <div class="poundToEuro" v-on:change="poundToEuro($event)">
+
+      </div>
     </div>
   </body>
 </html>
