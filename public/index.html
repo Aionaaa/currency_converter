@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <form v-on:submit.prevent="saveAmount">
+      <form v-on:submit.prevent="doMaths">
         <h3>Choose an amount of money (eur-gbp)</h3>
         <input type="number" v-model="currency.rates"/>
         <input type="submit" value="Submit">
@@ -16,7 +16,7 @@
       <div class="euroToPound" v-on:change="poundToEuro($event)">
 
       </div>
-      <form v-on:submit.prevent="saveAmount">
+      <form v-on:submit.prevent="doMaths">
         <h3>Choose an amount of money (gbp-eur)</h3>
         <input type="number" v-model="currency.rates"/>
         <input type="submit" value="Submit">

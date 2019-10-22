@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch("https://api.exchangeratesapi.io/latest")
         .then(response => response.json())
         .then(data => this.currencyData = data.rates)
+      },
+      doMaths: function(){
+        console.log("is this even talking to my html");
       }
     }
   })
