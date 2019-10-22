@@ -1,7 +1,6 @@
 {
   "name": "currency_converter",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +14,14 @@
   "devDependencies": {
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aionaaa/currency_converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aionaaa/currency_converter/issues"
+  },
+  "homepage": "https://github.com/Aionaaa/currency_converter#readme",
+  "description": ""
 }
